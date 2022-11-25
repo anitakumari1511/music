@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Cinzel:wght@800&family=Comforter+Brush&family=Roboto:wght@100&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Reem+Kufi+Ink&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Blaka+Ink&family=Cinzel:wght@800&family=Comforter+Brush&family=Monoton&family=Nabla&family=Reem+Kufi+Ink&family=Roboto:wght@100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    scroll-margin: 50px;
+}
+
+:root{
+    --purple5: #00004d;
+    --purple3: #000080;
+    --purple4: #001a66;
+    --purple5:  #330066;
+    --red: #800000;
+    --body: #f9f6ff;
+    --maxwidth: 1200px;
+}
+button {
+     background-color:rgba(177, 211, 8, 0.9) ;
+    padding: 10px 15px;
+    border: none;
+    transition: 0.2sec ease-in-out;
+    border-radius: 10px;
+}
+button:hover{
+   background-color: black;
+   color: rgba(177, 211, 8, 0.9);
+    opacity: 0.8;
+    transition: 0.2sec ease-in-out;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(177, 211, 8, 0.9);
+}
+
+html,body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    line-height: 1.4;
+    scroll-behavior: smooth;
+}
+
+ul{
+    list-style: none;
+} 
+   
+a{ text-decoration: none;color: white;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+   }
+
+header{
+   background-image: linear-gradient( rgb(16, 2, 46), rgb(207, 9, 238));
+   position: sticky;
+   top: 0;
+   z-index: 50;
+   box-shadow: 3px 3px 3px rgba(177, 211, 8, 0.9);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #f9f6ff;
+
+}
+.logo{
+    font-family: 'Nabla', cursive;
+    font-size: 35px;
+    font-weight: lighter;
+   
+}
+nav ul{
+    font-family: 'Nabla', cursive;
+    display: flex;
+    gap: 30px;
+    font-size:17px;
+    font-weight:500;
+}
+nav ul li{
+    border-bottom: 2px solid transparent;
+    transition: 0.2s ease-in-out;
+}
+nav ul li:hover{
+    border-bottom: 3px solid orange;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+.hero_section{
+    background-image: url(heroes/hero.jpg);
+    width: 100%;
+    height: 100vh;
+    /* background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; */
+    display: grid;
+    place-items: center;
+text-align: center;
+    color:white;
+   
+   
+}
+.hero_section .container{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.hero_section h1{
+ 
+    font-family: 'Cabin Sketch', cursive;
+ 
+    color: rgb(233, 9, 207);
+  
+    font-size: 96px;
+   font-weight: 800;
+
+}
+
+ 
+.hero_section h3{
+   
+    font-size: 32px;
+    
+}
+.hero_section p{
+   
+    font-size: 18px;
+    font-weight: 400px;
+    
+}
+
+/* music */
+.music-section{
+    padding-top: 50px;
+   background-color:rgb(5, 4, 5);
+}
+.music-section .container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+   
+}
+.music-section .container h2{
+    color: aqua;
+    font-size: 33px;
+    font-weight: 700;
+}
+.ipad{
+    margin-top: -350px;
+    position: relative;
+    top: 350px;
+}
+
+.about-music-container{
+
+display: flex;
+gap: 50px;
+/* flex-direction: column;
+justify-content: center;
+align-items: center; */
+display: grid;
+place-items: center;
+padding: 400px 0px 40px 40px;
+}
+
+.about-music-container h3{
+    color: rgb(87, 5, 5);
+}
+.about-music-container h4{
+    color: orangered;
+}
+
+.button-secendry-btn{
+    background-color:rgba(6, 7, 1, 0.9) ;
+   padding: 10px 15px;
+   border: none;
+   transition: 0.2sec ease-in-out;
+   border-radius: 10px;
+   color: rgb(227, 66, 22);
+   
+   
+   
+}
+.button-secendry-btn:hover{
+  background-color: rgb(227, 65, 22);
+  color: black;
+   opacity: 0.8;
+   transition: 0.2sec ease-in-out;
+   border-radius: 10px;
+   box-shadow: 5px 5px 5px rgba(9, 10, 8, 0.9);
+}
+
+
+
+/* video */
+
+#video{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color:rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 40px;
+
+}
+
+
+.vid-content{
+    text-align: center;
+    padding: 0 200px;
+    
+}
+.vid-content h2{
+   font-size: 50px;
+   color: rgb(17, 180, 235);
+   font-family: 'Creepster', cursive;
+}
+.vid-content p{
+    font-size: 15px;
+    letter-spacing: 2px;
+    line-height: 1.2;
+}
+
+#my-vid{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+    z-index: -1;
+}
+
+/* gift */
+.gift-section{
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
+    gap: 50px;
+    background-color: aliceblue;
+}
+.gift-content{
+
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 50px 40px;
+   align-content: space-between;
+}
+.container{
+    gap: 50px;
+}
